@@ -11,9 +11,10 @@ import java.util.List;
 public class Urano implements IBalanca<Produto> {
 
     @Override
-    public void exportar(@NotNull List<Produto> produtos, String caminhoParaSalvarArquivo) {
-        try (FileWriter writer = new FileWriter(caminhoParaSalvarArquivo + "/CADTXT.txt")) {
+    public void exportar(@NotNull List<Produto> produtos, String diretorioSalvar) {
+        try (FileWriter writer = new FileWriter(diretorioSalvar + "/CADTXT.txt")) {
             for (Produto produto : produtos) {
+                //sequencias
                 String codigo = String.format("%06d", Integer.parseInt(String.valueOf(produto.getCodigo())));
                 String tipoProduto = produto.getTipo();
                 String descricao = String.format("%-20s", produto.getDescricao());
