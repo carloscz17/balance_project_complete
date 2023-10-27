@@ -6,3 +6,9 @@ O objetivo principal deste projeto é criar um subsistema que faz a exportação
 - FilizolaSmart (CADTXT.TXT);
 - ToledoMGV6 (ITENSMGV.TXT);
 - UranoIntegra (PRODUTOS.TXT);
+
+### Tecnologia Utilizadas no Backend 📟
+- Java
+- Gradle
+
+> Status: Finalizado ⚠️
